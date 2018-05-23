@@ -1,10 +1,4 @@
-server:
-  port: 8081
-#  这里的配置有改变了哦
-  servlet:
-    context-path: /shiming11
-
-girl : B
-
-
+spring:
+  profiles:
+    active: prod
 

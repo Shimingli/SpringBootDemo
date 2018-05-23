@@ -1,0 +1,16 @@
+server:
+  port: 8081
+#  这里的配置有改变了哦
+  servlet:
+    context-path: /shiming11
+
+girl : B
+age: 18
+content: "girl :${girl},age:${age}"
+
+me :
+  name : shiming--dev我擦 这个age 能自动的识别这个是否是int类型的东西
+  age: 21
+# 我擦 这个age 能自动的识别这个是否是int类型的东西
+
+
