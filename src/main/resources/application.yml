@@ -1,4 +1,12 @@
 spring:
   profiles:
     active: prod
-
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dbshiming
+    username: root    # 注意配置问题啊 ，大傻逼 ，配置正确了 才给我扯起它 东西   傻逼
+    password: App123
+  jpa:
+    hibernate:   #// update--运行的时候保存原来的表 ，数据不会消失 update 比较常用
+      ddl-auto:  update    #// create--运行的时候自动创建表，如果有这个表 就会帮你删除了
+    show-sql: true   #方便调试
